@@ -4,6 +4,73 @@
 
 ---
 
+## [v1.1 - 애니메이션 강화] - 2026-08-13
+
+### ✨ 추가됨 (Added)
+
+#### CSS 애니메이션 (@keyframes)
+- **fadeIn**: 페이드 인 + 살짝 위로 슬라이드 (0.6s)
+- **slideInLeft**: 왼쪽에서 슬라이드 인 (0.7s)
+- **slideInRight**: 오른쪽에서 슬라이드 인 (0.7s)
+- **slideInTop**: 위에서 슬라이드 인 (0.6s)
+- **pulse**: 펄스 효과 (맥박처럼 박스 그림자 확장, 1.5s 반복)
+- **scaleUp**: 스케일 인 (0.95배에서 1배로, 0.6s)
+- **bounce**: 바운스 효과 (위아래 튀는 듯한 움직임, 0.6s)
+
+#### CSS 유틸리티 클래스
+- `.fade-in`: fadeIn 애니메이션 적용
+- `.slide-in-left`: slideInLeft 애니메이션 적용
+- `.slide-in-right`: slideInRight 애니메이션 적용
+- `.slide-in-top`: slideInTop 애니메이션 적용
+- `.scale-up`: scaleUp 애니메이션 적용
+- `.bounce-in`: bounce 애니메이션 적용
+- **Stagger delays**: nth-child를 사용한 연속 애니메이션 (0.1s ~ 0.8s 간격)
+
+#### 요소별 애니메이션 적용
+- **섹션 제목** (`.section-title`): slideInTop 자동 실행
+- **연락처 버튼** (`.contact-button`): 호버 시 pulse 애니메이션
+
+#### JavaScript Intersection Observer
+- 스크롤로 요소가 보이면 자동 애니메이션 실행
+- 요소 타입별로 다른 애니메이션 적용:
+  - 섹션 제목: slideInTop
+  - About 텍스트: fadeIn
+  - 기술 태그: scaleUp
+  - 타임라인: slideInLeft/slideInRight (번갈아 가며)
+  - 프로젝트 카드: fadeIn
+  - 연락처 버튼: bounceIn
+- 요소가 10% 보이면 애니메이션 시작
+- 애니메이션 후 자동으로 관찰 중지 (성능 최적화)
+
+#### 페이지 로드 애니메이션
+- 히어로 섹션: 페이지 로드 시 자동 애니메이션
+  - 이름: slideInTop (0.8s)
+  - 태그라인: fadeIn (0.8s, 0.2s 딜레이)
+  - 프로필 사진: scaleUp (0.8s, 0.1s 딜레이)
+
+### 🔄 변경됨 (Changed)
+
+- **css/style.css** (720줄 → 850줄)
+  - KEYFRAME ANIMATIONS 섹션 추가 (130줄)
+  - section-title에 slideInTop 애니메이션 자동 적용
+  - contact-button:hover에 pulse 애니메이션 추가
+
+- **js/script.js** (115줄 → 220줄)
+  - Intersection Observer API 구현 (100줄)
+  - 페이지 로드 애니메이션 로직 추가 (25줄)
+  - 주석 및 설명 추가
+
+### 📊 통계 변화
+
+| 항목 | 이전 | 현재 | 변화 |
+|------|------|------|------|
+| CSS 줄 수 | 720 | 850 | +130 |
+| JavaScript 줄 수 | 115 | 220 | +105 |
+| @keyframes 개수 | 0 | 7 | +7 |
+| 애니메이션 유틸리티 클래스 | 0 | 6 | +6 |
+
+---
+
 ## [초기 버전] - 2026-08-13
 
 ### 🎉 생성됨 (Created)

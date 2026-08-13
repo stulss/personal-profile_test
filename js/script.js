@@ -138,4 +138,100 @@ if (menuToggle) {
 // Update hamburger style on page load (in case it was remembered from before)
 document.addEventListener('DOMContentLoaded', updateHamburgerStyle);
 
+// ============================================
+// Scroll Animation with Intersection Observer
+// ============================================
+
+/**
+ * Intersection Observer: Trigger animations when elements become visible
+ * This creates smooth fade-in and slide-in effects as user scrolls
+ */
+const observerOptions = {
+    threshold: 0.1,  // Trigger when 10% of element is visible
+    rootMargin: '0px 0px -100px 0px'  // Start animation 100px before element reaches bottom
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Add appropriate animation class based on element type
+            const element = entry.target;
+
+            if (element.classList.contains('section-title')) {
+                element.classList.add('slide-in-top');
+            } else if (element.classList.contains('about__text')) {
+                element.classList.add('fade-in');
+            } else if (element.classList.contains('skill-tag')) {
+                element.classList.add('scale-up');
+            } else if (element.classList.contains('timeline__item')) {
+                // Alternate left and right slide for timeline items
+                if (element.parentElement.children.length > 0) {
+                    const index = Array.from(element.parentElement.children).indexOf(element);
+                    if (index % 2 === 0) {
+                        element.classList.add('slide-in-left');
+                    } else {
+                        element.classList.add('slide-in-right');
+                    }
+                }
+            } else if (element.classList.contains('project-card')) {
+                element.classList.add('fade-in');
+            } else if (element.classList.contains('contact-button')) {
+                element.classList.add('bounce-in');
+            } else {
+                // Default fade-in for other elements
+                element.classList.add('fade-in');
+            }
+
+            // Stop observing this element after animation is added
+            observer.unobserve(element);
+        }
+    });
+}, observerOptions);
+
+/**
+ * Initialize scroll animations on page load
+ */
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all elements that should have scroll animations
+    const elementsToAnimate = document.querySelectorAll(
+        '.section-title, ' +
+        '.about__text, ' +
+        '.skill-tag, ' +
+        '.timeline__item, ' +
+        '.project-card, ' +
+        '.contact-button, ' +
+        '.hero__name, ' +
+        '.hero__tagline, ' +
+        '.hero__social'
+    );
+
+    // Observe each element
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+// ============================================
+// Page Load Animation
+// ============================================
+
+/**
+ * Animate hero section on page load
+ */
+window.addEventListener('load', () => {
+    const heroName = document.querySelector('.hero__name');
+    const heroTagline = document.querySelector('.hero__tagline');
+    const heroImage = document.querySelector('.hero__image');
+
+    if (heroName) {
+        heroName.style.animation = 'slideInTop 0.8s ease-out';
+    }
+    if (heroTagline) {
+        heroTagline.style.animation = 'fadeIn 0.8s ease-out 0.2s both';
+    }
+    if (heroImage) {
+        heroImage.style.animation = 'scaleUp 0.8s ease-out 0.1s both';
+    }
+});
+
 console.log('✓ Portfolio website loaded successfully!');
