@@ -1,0 +1,14 @@
+﻿# Thumbnails
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# System files
+*.log
+node_modules/

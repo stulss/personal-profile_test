@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<!-- TODO: 사이트 한 줄 설명 -->">
+    <title><!-- TODO: 이름 --> | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ============ HEADER & NAVIGATION ============ -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <div class="navbar__logo">
+                    <!-- TODO: 이름 또는 로고 (약자) -->
+                    <span class="logo">Your Logo</span>
+                </div>
+
+                <!-- Mobile menu toggle button -->
+                <button class="navbar__menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+
+                <!-- Navigation links -->
+                <ul class="navbar__menu" id="navMenu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#career" class="nav-link">Career</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <!-- ============ HERO SECTION ============ -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <!-- Profile Image -->
+                    <div class="hero__image-wrapper">
+                        <img src="https://via.placeholder.com/200" alt="프로필 사진" class="hero__image">
+                        <!-- TODO: 실제 프로필 사진으로 교체 (assets/profile.jpg 등) -->
+                    </div>
+
+                    <!-- Name & Tagline -->
+                    <h1 class="hero__name">
+                        <!-- TODO: 이름 입력 -->
+                        Your Name
+                    </h1>
+                    <p class="hero__tagline">
+                        <!-- TODO: 직업 또는 한 줄 소개 -->
+                        Full-stack Developer | Problem Solver
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="hero__social">
+                        <a href="https://github.com" class="social-link" target="_blank" rel="noopener noreferrer" title="GitHub">
+                            <!-- TODO: GitHub 프로필 링크로 변경 -->
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <!-- TODO: LinkedIn 프로필 링크로 변경 -->
+                            LinkedIn
+                        </a>
+                        <a href="mailto:your.email@example.com" class="social-link" title="Email">
+                            <!-- TODO: 이메일 주소로 변경 -->
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT SECTION ============ -->
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="about__text">
+                    <!-- TODO: 자기소개 문단 작성 (150-200자 권장) -->
+                    안녕하세요! 저는 웹 개발을 좋아하는 개발자입니다. 새로운 기술을 배우고,
+                    의미 있는 프로젝트를 만드는 것에 열정을 가지고 있습니다.
+                    이 포트폴리오에서 제 작업과 경험을 살펴보세요.
+                </p>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS SECTION ============ -->
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills__grid">
+                    <!-- TODO: 다음 예제를 참고해서 기술 항목 추가/제거 -->
+                    <!-- 각 <span class="skill-tag">를 자신의 기술로 교체 -->
+                    <span class="skill-tag"><!-- TODO: 기술 1 -->JavaScript</span>
+                    <span class="skill-tag"><!-- TODO: 기술 2 -->React</span>
+                    <span class="skill-tag"><!-- TODO: 기술 3 -->HTML/CSS</span>
+                    <span class="skill-tag"><!-- TODO: 기술 4 -->Node.js</span>
+                    <span class="skill-tag"><!-- TODO: 기술 5 -->Python</span>
+                    <span class="skill-tag"><!-- TODO: 기술 6 -->Git</span>
+                    <span class="skill-tag"><!-- TODO: 기술 7 -->REST API</span>
+                    <span class="skill-tag"><!-- TODO: 기술 8 -->SQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CAREER & EDUCATION SECTION ============ -->
+        <section class="career" id="career">
+            <div class="container">
+                <h2 class="section-title">Career & Education</h2>
+
+                <!-- Career Timeline -->
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline__item">
+                        <div class="timeline__date">
+                            <!-- TODO: 근무 시작년월 - 종료년월 (또는 현재) -->
+                            2022 - Present
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">
+                                <!-- TODO: 직책/포지션 -->
+                                Senior Developer
+                            </h3>
+                            <p class="timeline__subtitle">
+                                <!-- TODO: 회사 이름 -->
+                                Tech Company Inc.
+                            </p>
+                            <p class="timeline__description">
+                                <!-- TODO: 담당 업무 및 성과 (1-2줄) -->
+                                주요 기술 구축 및 팀 리드 업무를 담당하고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline__item">
+                        <div class="timeline__date">
+                            <!-- TODO: 근무 시작년월 - 종료년월 -->
+                            2020 - 2022
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">
+                                <!-- TODO: 직책/포지션 -->
+                                Junior Developer
+                            </h3>
+                            <p class="timeline__subtitle">
+                                <!-- TODO: 회사 이름 -->
+                                Startup XYZ
+                            </p>
+                            <p class="timeline__description">
+                                <!-- TODO: 담당 업무 및 배운 점 (1-2줄) -->
+                                웹 개발 기초를 다지고 다양한 프로젝트를 경험했습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education Item -->
+                    <div class="timeline__item">
+                        <div class="timeline__date">
+                            <!-- TODO: 졸업년도 또는 학기 -->
+                            2020
+                        </div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">
+                                <!-- TODO: 학위/전공 -->
+                                Bachelor of Science in Computer Science
+                            </h3>
+                            <p class="timeline__subtitle">
+                                <!-- TODO: 대학 이름 -->
+                                University Name
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS SECTION ============ -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects__grid">
+
+                    <!-- Project Card 1 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://via.placeholder.com/400x250" alt="프로젝트 1">
+                            <!-- TODO: 프로젝트 스크린샷 또는 이미지로 변경 -->
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">
+                                <!-- TODO: 프로젝트 이름 -->
+                                Project Title 1
+                            </h3>
+                            <p class="project-card__description">
+                                <!-- TODO: 프로젝트 설명 (50-100자) -->
+                                이 프로젝트의 목표, 주요 기능, 사용한 기술을 간단하게 설명하세요.
+                            </p>
+                            <div class="project-card__tags">
+                                <!-- TODO: 사용 기술 태그 -->
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                            </div>
+                            <a href="#" class="project-card__link">View Project →</a>
+                            <!-- TODO: GitHub 저장소 링크 또는 데모 링크로 변경 -->
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://via.placeholder.com/400x250" alt="프로젝트 2">
+                            <!-- TODO: 프로젝트 스크린샷 또는 이미지로 변경 -->
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">
+                                <!-- TODO: 프로젝트 이름 -->
+                                Project Title 2
+                            </h3>
+                            <p class="project-card__description">
+                                <!-- TODO: 프로젝트 설명 (50-100자) -->
+                                이 프로젝트의 목표, 주요 기능, 사용한 기술을 간단하게 설명하세요.
+                            </p>
+                            <div class="project-card__tags">
+                                <!-- TODO: 사용 기술 태그 -->
+                                <span class="tag">Python</span>
+                                <span class="tag">Django</span>
+                            </div>
+                            <a href="#" class="project-card__link">View Project →</a>
+                            <!-- TODO: GitHub 저장소 링크 또는 데모 링크로 변경 -->
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="https://via.placeholder.com/400x250" alt="프로젝트 3">
+                            <!-- TODO: 프로젝트 스크린샷 또는 이미지로 변경 -->
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">
+                                <!-- TODO: 프로젝트 이름 -->
+                                Project Title 3
+                            </h3>
+                            <p class="project-card__description">
+                                <!-- TODO: 프로젝트 설명 (50-100자) -->
+                                이 프로젝트의 목표, 주요 기능, 사용한 기술을 간단하게 설명하세요.
+                            </p>
+                            <div class="project-card__tags">
+                                <!-- TODO: 사용 기술 태그 -->
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">WebGL</span>
+                            </div>
+                            <a href="#" class="project-card__link">View Project →</a>
+                            <!-- TODO: GitHub 저장소 링크 또는 데모 링크로 변경 -->
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT SECTION ============ -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact__intro">
+                    <!-- TODO: 연락처 관련 짧은 인사말 -->
+                    새로운 기회나 협업에 관심이 있으신가요? 편하게 연락주세요!
+                </p>
+                <div class="contact__links">
+                    <a href="mailto:your.email@example.com" class="contact-button">
+                        <!-- TODO: 이메일 주소로 변경 -->
+                        Send Email
+                    </a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-button secondary">
+                        <!-- TODO: GitHub 프로필 링크로 변경 -->
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                &copy; <span id="year"></span> <!-- 현재 연도 자동 삽입 -->
+                <!-- TODO: 이름 -->
+                Your Name
+                . All rights reserved.
+            </p>
+            <p class="footer__credit">
+                Built with HTML, CSS & JavaScript
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
