@@ -550,6 +550,13 @@ body {
     font-weight: 500;
 }
 
+.project-card__links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+
 .project-card__link {
     display: inline-block;
     color: #007bff;

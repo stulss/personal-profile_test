@@ -4,6 +4,32 @@
 
 ---
 
+## [v1.2 - 실제 콘텐츠 반영] - 2026-08-19
+
+### ✨ 추가됨 (Added)
+
+- **index.html**: 템플릿의 모든 `<!-- TODO -->` 자리표시자 중 Hero/About/Skills/Career & Education/Contact를 실제 콘텐츠로 교체
+  - Hero: 이름(홍주형), 태그라인, GitHub 링크(`github.com/stulss`)
+  - About: 자기소개 문단 (경력·전공·현재 학습 중인 것 요약)
+  - Skills: Python, MySQL, HTML, CSS, JavaScript, Git, GitHub
+  - Career & Education: 실제 경력 5건(코리아AI아카데미 SKT_ALEPH_A / (주)에스투에스 / 일학습공동훈련센터 / 동원과학기술대학교 산학협력단 / 동원과학기술대학교 간호학과 조교) + 학력 1건(냉동공조공학사, 동원과학기술대학교) 타임라인 작성
+  - Contact: GitHub Profile 버튼만 노출
+- **index.html / assets/odd-one-out.png**: 프로젝트 카드 1을 `odd-one-out`("딱 하나 이상함") 게임 프로젝트로 채움
+  - 실제 플레이 스크린샷(`odd-one-out/img/evidence/resolution_1920x1080.png`)을 `assets/odd-one-out.png`로 복사해 사용
+  - 설명, 기술 태그(HTML/CSS/JavaScript/Canvas), 링크 2개(라이브 데모 `odd-one-out-nine.vercel.app` + GitHub 저장소 `github.com/stulss/odd-one-out`) 추가
+- **css/style.css**: `.project-card__links` 래퍼 클래스 추가 — 프로젝트 카드 한 장에 링크 2개(플레이/저장소)를 가로로 나란히 배치하기 위함
+
+### 🔄 변경됨 (Changed)
+
+- **index.html**: LinkedIn·이메일 소셜 링크 제거 — webtest 프로젝트의 개인정보 공개 범위 결정(이메일 비공개)과 일관되게 GitHub 링크만 노출
+
+### ⏳ 보류 (Pending)
+
+- 프로필 사진: 아직 placeholder 이미지(`via.placeholder.com`) 사용 중, 실제 사진 준비 시 교체 필요
+- 프로젝트 카드 2, 3: 다른 프로젝트가 정해질 때까지 TODO 자리표시자 그대로 유지
+
+---
+
 ## [v1.1 - 애니메이션 강화] - 2026-08-13
 
 ### ✨ 추가됨 (Added)
@@ -236,4 +262,4 @@
 
 ---
 
-**마지막 업데이트**: 2026-08-13
+**마지막 업데이트**: 2026-08-19
