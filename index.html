@@ -211,20 +211,27 @@
         <section class="projects" id="projects">
             <div class="container">
                 <h2 class="section-title">Featured Projects</h2>
+                <p class="projects__intro">
+                    직접 설계·구현하고 공개 배포까지 검증한 프로젝트입니다. 각 프로젝트의 문제 해결 방식과 확인 가능한 결과를 함께 정리했습니다.
+                </p>
                 <div class="projects__grid">
 
-                    <!-- Project Card 1 -->
-                    <article class="project-card">
+                    <article class="project-card" aria-labelledby="project-odd-title">
                         <div class="project-card__image">
                             <img src="assets/odd-one-out.png" alt="딱 하나 이상함 게임 플레이 화면 (스테이지 11, 원형 그리드에서 오답 하나 찾기)">
                         </div>
                         <div class="project-card__content">
-                            <h3 class="project-card__title">
+                            <div class="project-card__meta">
+                                <span>01 · Browser Game</span>
+                                <span class="project-card__status">배포 완료</span>
+                            </div>
+                            <h3 class="project-card__title" id="project-odd-title">
                                 딱 하나 이상함
                             </h3>
                             <p class="project-card__description">
-                                여러 개 중 딱 하나 다른 것을 제한 시간 안에 찾는 브라우저 관찰력 게임. 프레임워크 없이 순수 HTML·CSS·JavaScript와 Canvas·Web Audio API만으로 제작했습니다.
+                                여러 도형 중 딱 하나 다른 요소를 찾는 관찰력 게임입니다. 순수 JavaScript로 난이도 조절, 저장 복구, 접근성 선택권과 결과 공유까지 구현했습니다.
                             </p>
+                            <p class="project-card__proof"><strong>검증</strong> 10분 자동 진행 · 손상값 6종 복구 · 화면 증거 11종</p>
                             <div class="project-card__tags">
                                 <span class="tag">HTML</span>
                                 <span class="tag">CSS</span>
@@ -232,59 +239,67 @@
                                 <span class="tag">Canvas</span>
                             </div>
                             <div class="project-card__links">
-                                <a href="https://odd-one-out-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link">플레이하기 →</a>
-                                <a href="https://github.com/stulss/odd-one-out" target="_blank" rel="noopener noreferrer" class="project-card__link">GitHub 저장소 →</a>
+                                <a href="https://odd-one-out-nine.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link">딱 하나 이상함 플레이 →</a>
+                                <a href="https://github.com/stulss/odd-one-out" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--secondary">소스 코드 →</a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Project Card 2 -->
-                    <article class="project-card">
+                    <article class="project-card" aria-labelledby="project-card-news-title">
                         <div class="project-card__image">
-                            <img src="https://via.placeholder.com/400x250" alt="프로젝트 2">
-                            <!-- TODO: 프로젝트 스크린샷 또는 이미지로 변경 -->
+                            <img src="assets/card-news-maker.png" alt="카드뉴스 메이커 Vercel 배포 화면의 캔버스 편집기">
                         </div>
                         <div class="project-card__content">
-                            <h3 class="project-card__title">
-                                <!-- TODO: 프로젝트 이름 -->
-                                Project Title 2
+                            <div class="project-card__meta">
+                                <span>02 · Canvas Editor</span>
+                                <span class="project-card__status">배포 완료</span>
+                            </div>
+                            <h3 class="project-card__title" id="project-card-news-title">
+                                카드뉴스 메이커
                             </h3>
                             <p class="project-card__description">
-                                <!-- TODO: 프로젝트 설명 (50-100자) -->
-                                이 프로젝트의 목표, 주요 기능, 사용한 기술을 간단하게 설명하세요.
+                                이미지와 한글 문구를 브라우저에서 편집하고 고해상도 파일로 내보내는 도구입니다. 템플릿 CRUD·JSON 이동과 KBO 경기 결과 카드 자동 생성 기능을 제공합니다.
                             </p>
+                            <p class="project-card__proof"><strong>검증</strong> 자체 점검 20개 · 브라우저 증거 15종 · 사용자 이미지 서버 전송 0건</p>
                             <div class="project-card__tags">
-                                <!-- TODO: 사용 기술 태그 -->
-                                <span class="tag">Python</span>
-                                <span class="tag">Django</span>
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Konva</span>
+                                <span class="tag">Vite</span>
                             </div>
-                            <a href="#" class="project-card__link">View Project →</a>
-                            <!-- TODO: GitHub 저장소 링크 또는 데모 링크로 변경 -->
+                            <div class="project-card__links">
+                                <a href="https://card-news-maker-beige.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link">카드뉴스 메이커 사용하기 →</a>
+                                <a href="https://github.com/stulss/card-news-maker" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--secondary">소스 코드 →</a>
+                            </div>
                         </div>
                     </article>
 
-                    <!-- Project Card 3 -->
-                    <article class="project-card">
+                    <article class="project-card" aria-labelledby="project-board-title">
                         <div class="project-card__image">
-                            <img src="https://via.placeholder.com/400x250" alt="프로젝트 3">
-                            <!-- TODO: 프로젝트 스크린샷 또는 이미지로 변경 -->
+                            <img src="assets/realtime-info-board-t04.png" alt="오늘의 진짜 정보판 대시보드에서 실제 데이터와 일별 기록을 확인하는 화면">
                         </div>
                         <div class="project-card__content">
-                            <h3 class="project-card__title">
-                                <!-- TODO: 프로젝트 이름 -->
-                                Project Title 3
+                            <div class="project-card__meta">
+                                <span>03 · Data Dashboard</span>
+                                <span class="project-card__status">배포 완료</span>
+                            </div>
+                            <h3 class="project-card__title" id="project-board-title">
+                                오늘의 진짜 정보판
                             </h3>
                             <p class="project-card__description">
-                                <!-- TODO: 프로젝트 설명 (50-100자) -->
-                                이 프로젝트의 목표, 주요 기능, 사용한 기술을 간단하게 설명하세요.
+                                BTC/KRW 등 실제 데이터를 출처와 두 시각까지 함께 보여주는 정보판입니다. 외부 API 실패를 5종으로 구분하고 마지막 정상값과 KST 일별 변화를 보존합니다.
                             </p>
+                            <p class="project-card__proof"><strong>검증</strong> Vitest 41개 · Playwright E2E 9개 · 비밀값 노출 0건</p>
                             <div class="project-card__tags">
-                                <!-- TODO: 사용 기술 태그 -->
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">WebGL</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">React</span>
+                                <span class="tag">Playwright</span>
                             </div>
-                            <a href="#" class="project-card__link">View Project →</a>
-                            <!-- TODO: GitHub 저장소 링크 또는 데모 링크로 변경 -->
+                            <div class="project-card__links">
+                                <a href="https://realtime-info-board-t04.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card__link">정보판 확인하기 →</a>
+                                <a href="https://github.com/stulss/realtime-info-board-t04" target="_blank" rel="noopener noreferrer" class="project-card__link project-card__link--secondary">소스 코드 →</a>
+                            </div>
                         </div>
                     </article>
 

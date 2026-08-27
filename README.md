@@ -1,6 +1,8 @@
 # 🌐 Personal Portfolio Website
 
-개인 프로필과 포트폴리오를 소개하는 단일 페이지 웹사이트입니다.
+개인 프로필과 실제 배포 프로젝트를 소개하는 단일 페이지 포트폴리오입니다.
+
+**공개 주소:** https://stulss.github.io/personal-profile_test/
 
 ## ✨ 특징
 
@@ -95,8 +97,8 @@ python -m SimpleHTTPServer 8000
 - 회사, 직책, 담당 업무 등 기록
 
 ### Projects (프로젝트)
-- 진행한 프로젝트 3개를 카드로 표시
-- 프로젝트 설명, 사용 기술, 링크 포함
+- `odd-one-out`, `card-news-maker`, `realtime-info-board-t04` 3개를 실제 화면으로 소개
+- 프로젝트의 목적, 기술 스택, 검증 결과, 라이브 주소와 소스 주소를 함께 표시
 
 ### Contact (연락)
 - 이메일 및 소셜 링크
@@ -121,7 +123,7 @@ python -m SimpleHTTPServer 8000
 
 ## 🐛 문제 발생 시
 
-1. **이미지가 안 보임**: 경로를 확인하거나 `https://via.placeholder.com` 링크를 사용
+1. **이미지가 안 보임**: `assets/` 경로와 파일명을 확인
 2. **스타일이 적용 안 됨**: `css/style.css` 경로 확인, 브라우저 캐시 초기화 (Ctrl+Shift+R)
 3. **메뉴가 안 열림**: 브라우저 콘솔에서 JavaScript 오류 확인 (F12)
 
@@ -137,4 +139,4 @@ GitHub Pages 배포 중 문제가 생기면:
 
 ---
 
-**마지막 업데이트**: 2026-08-13
+**마지막 업데이트**: 2026-08-27

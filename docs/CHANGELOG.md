@@ -4,6 +4,22 @@
 
 ---
 
+## [v1.3 - Featured Projects 최신화] - 2026-08-27
+
+### ✨ 추가됨 (Added)
+
+- **index.html**: Featured Projects에 `card-news-maker`, `realtime-info-board-t04` 추가
+- **assets/**: 각 저장소에서 확인한 실제 배포 화면 `card-news-maker.png`, `realtime-info-board-t04.png` 추가
+- 각 카드에 프로젝트 맥락, 기술 스택, 검증 수치, 라이브 주소, GitHub 저장소 주소 추가
+
+### 🔄 변경됨 (Changed)
+
+- **index.html / css/style.css**: 기존 카드 복제 방식 대신 프로젝트 종류·배포 상태·검증 결과를 빠르게 읽는 사례 중심 정보 구조로 개편
+- 링크 문구를 프로젝트별 행동이 드러나는 설명형 문구로 변경하고 키보드 포커스 스타일 보강
+- **README.md / 작업내역_체크리스트.md**: 프로젝트 2·3 미정 상태를 완료로 갱신
+
+---
+
 ## [v1.2 - 실제 콘텐츠 반영] - 2026-08-19
 
 ### ✨ 추가됨 (Added)
