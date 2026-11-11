@@ -1,83 +1,76 @@
-# 🌐 Personal Portfolio Website
+# 🌐 홍주형 통합 마스터 포트폴리오 (Master Portfolio Showcase)
 
-개인 프로필과 실제 배포 프로젝트를 소개하는 단일 페이지 포트폴리오입니다.
+DevOps · 정보보안 · 풀스택 엔지니어 홍주형의 공식 통합 웹 포트폴리오입니다.  
+Vercel에 배포된 라이브 서비스 22개와 GitHub 공개 저장소 38개의 대표 성과를 카테고리별로 집약하여 제공합니다.
 
-**공개 주소:** https://stulss.github.io/personal-profile_test/
+**공개 라이브 주소:** [https://stulss.github.io/personal-profile_test/](https://stulss.github.io/personal-profile_test/)
 
-## ✨ 특징
+---
 
-- **반응형 디자인**: 데스크톱, 태블릿, 모바일 모두 대응
-- **미니멀 & 클린**: 불필요한 요소를 제거한 깔끔한 디자인
-- **순수 HTML/CSS/JS**: 프레임워크 없이 빠른 로딩과 최적화
-- **GitHub Pages 배포 준비**: 쉬운 무료 배포 과정
-- **다양한 애니메이션 효과**: 
-  - 페이지 로드 시: Hero 섹션 부드럽게 나타남
-  - 스크롤 시: 각 섹션의 요소들이 순차적으로 나타남
-  - 호버 시: 버튼, 카드, 태그에 인터랙티브 효과
-  - 연락처 버튼: 펄스 효과로 눈에 띄게 표현
-- **스크롤 애니메이션**: 부드러운 스크롤과 Intersection Observer 기반 자동 애니메이션
-- **모바일 메뉴**: 반응형 네비게이션 메뉴 + 햄버거 애니메이션
+## ✨ 핵심 특징 및 주요 기능
+
+- **마스터 쇼케이스 집약 (Master Projects Hub)**:
+  - 8대 대표 프로젝트(NEXUS WORK, Team PM App, ZTNA 비밀금고, AI 컨텍스트 인계랩, Plan-Do-See 다이어리, 카드뉴스 메이커, 실시간 정보판, 딱 하나 이상함) 수록
+  - 프로젝트별 **3단 링크** 제공: `라이브 데모(App)` / `상세 포트폴리오(Showcase)` / `GitHub 소스코드(Repo)`
+  - **카테고리 인터랙티브 필터**: 전체 / 보안 & AI / 엔터프라이즈 / 크리에이티브
+  - 실전 검증 수치 및 트러블슈팅(프록시 헤더 복원, 번들 42.6% 최적화, ZTNA 판정 규칙 등) 명시
+- **IT 역량 이력서 연계**:
+  - `IT_역량이력서_수강전후_자가진단_작성.docx`의 4대 기술 도메인(보안·AI / 백엔드·DevOps / 프론트엔드 / 자동화·QA) 및 자가진단 숙련도 반영
+  - 코리아AI아카데미 SKT_ALEPH_A(출석률 100%) 및 그린컴퓨터아카데미 교육 이력, 산학협력단/일학습병행 매니저 경력 상세화
+- **편의 인터랙션**:
+  - 원클릭 이메일 주소 복사 토스트 알림 기능 (`doffl9737@gmail.com`)
+  - 완전 반응형 UI (데스크톱, 태블릿, 모바일) 및 부드러운 스크롤 애니메이션
+
+---
 
 ## 📁 폴더 구조
 
 ```
-personal-profile/
-├── index.html                 # 메인 HTML 파일
+personal-profile_test/
+├── index.html                 # 마스터 포트폴리오 메인 페이지
 ├── css/
-│   └── style.css             # 스타일시트
+│   └── style.css             # 반응형 스타일 & 테마 & 필터/뱃지 확장
 ├── js/
-│   └── script.js             # JavaScript (인터랙션)
-├── assets/                   # 이미지 및 리소스 폴더
+│   └── script.js             # 네비게이션, 카테고리 필터링, 이메일 복사 인터랙션
+├── assets/                   # 고해상도 실물 프로젝트 스크린샷 8종
+│   ├── nexus-work.png
+│   ├── team-pm-app.png
+│   ├── ztna-vault.png
+│   ├── ai-context-handover-lab.png
+│   ├── plan-do-see-diary.png
+│   ├── card-news-maker.png
+│   ├── realtime-info-board-t04.png
+│   └── odd-one-out.png
 ├── docs/
-│   ├── CONTENT-GUIDE.md      # 콘텐츠 입력 가이드
-│   ├── DEPLOYMENT.md         # GitHub Pages 배포 가이드
-│   └── CHANGELOG.md          # 변경 이력
-└── README.md                  # 이 파일
+│   ├── CHANGELOG.md          # 버전별 변경 이력 (v2.0 갱신)
+│   ├── CONTENT-GUIDE.md      # 콘텐츠 가이드
+│   └── DEPLOYMENT.md         # 배포 가이드
+├── 작업내역_체크리스트.md     # 작업 히스토리 및 진행 로그
+└── README.md                  # 프로젝트 설명서
 ```
 
-## 🚀 로컬에서 실행하기
+---
 
-### 1. 폴더 열기
-브라우저에서 `index.html`을 직접 열 수 있습니다:
-- 파일 탐색기에서 `personal-profile` 폴더로 이동
-- `index.html` 파일을 마우스 오른쪽 클릭
-- "다른 프로그램으로 열기" → 브라우저 선택
+## 🚀 로컬 실행 방법
 
-### 2. 로컬 서버 사용 (선택사항)
-Python이 설치되어 있으면 간단한 로컬 서버를 시작할 수 있습니다:
+브라우저에서 `index.html`을 직접 열거나 로컬 웹서버를 구동합니다:
 
 ```bash
-# personal-profile 폴더에서
+# PowerShell / Command Prompt
 python -m http.server 8000
-# 또는 Python 2.x
-python -m SimpleHTTPServer 8000
 ```
+브라우저에서 `http://localhost:8000` 접속
 
-그 후 브라우저에서 `http://localhost:8000`으로 접속합니다.
+---
 
-## ✏️ 콘텐츠 작성하기
+## 📬 연락처 (Contact)
 
-`index.html`의 `<!-- TODO: ... -->` 주석들을 찾아 자신의 정보로 교체하세요.
+- **이메일**: [doffl9737@gmail.com](mailto:doffl9737@gmail.com)
+- **GitHub**: [https://github.com/stulss](https://github.com/stulss)
+- **Vercel 프로필/배포**: [https://hongjuhyung.vercel.app](https://hongjuhyung.vercel.app)
+- **입사 희망 분야**: DevOps · 클라우드 / 정보보안 · 네트워크 / 백엔드 · 풀스택
+- **취업 가능 시기**: 2026년 11월 (즉시 가능)
 
-상세 가이드는 [`docs/CONTENT-GUIDE.md`](docs/CONTENT-GUIDE.md)를 참고하세요.
-
-### 주요 수정 항목
-- **이름**: 헤더, 히어로 섹션, 푸터
-- **소개**: 자기소개 문단, 한 줄 태그라인
-- **기술**: Skills 섹션의 기술 태그
-- **경력**: Career & Education 타임라인
-- **프로젝트**: Projects 섹션의 카드 (3개)
-- **연락처**: 이메일, GitHub, LinkedIn 링크
-
-## 🌍 GitHub Pages로 배포하기
-
-상세한 배포 가이드는 [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md)를 참고하세요.
-
-### 간단한 단계
-1. 이 폴더를 GitHub 저장소로 만들기
-2. `git init` 실행
-3. GitHub에 저장소 생성 (`username.github.io` 추천)
-4. 코드 푸시하기
 5. GitHub Pages 활성화 (저장소 설정에서)
 
 ## 📝 주요 섹션 설명

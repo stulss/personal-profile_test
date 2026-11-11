@@ -4,6 +4,43 @@
 
 ---
 
+## [v2.5 - 4대 서브에이전트 교차 검증 기반 프로파일 고도화 & 보안 하드닝] - 2026-11-11
+
+### ✨ 추가 및 전면 개편 (Revamped)
+- **4대 서브에이전트(기술 면접관, UI/UX 아키텍트, HR 커리어 전략가, 보안 레드팀) 상호 반박 토론 결과 반영**:
+  - **포지셔닝 정밀화**: `DevOps · 정보보안 · 풀스택`의 만물상 모호성을 탈피하고, `시스템 보안 & 백엔드 엔지니어 (System Security & Resilient Backend Engine)`로 확고한 정체성 확립.
+  - **커리어 내러티브 3단 리프레이밍**: "냉동공조 물리설비 압력제어 → 국가 R&D 사업 지출결의 감사(1원 오차 0) → F&B 프로세스 최적화 → 클라우드 보안 무결성 & AI-XDR"로 비전공 핸디캡을 독보적인 강점으로 승화.
+  - **프로젝트 2계층 위계 분리 (3 Core + 5 Lab)**:
+    - 🌟 **3대 CORE DOMAIN SHOWCASE**: `NEXUS WORK` (L7 신뢰 프록시 헤더 보존 & DB PoLP), `Team PM App` (Jira형 Lexorank $O(1)$ 실수형 인덱스 & IEEE 754 오버플로우 방어), `최부장의 비밀금고` (ZTNA 3대 판정 & Supabase RLS)
+    - 🧪 **5대 ENGINEERING & CREATIVE LAB**: `Daylog`, `카드툰`, `AI Context Handover Lab`, `Plan-Do-See Diary`, `오리지널 감별국`
+  - **UI/UX 대규모 현대화**: 토스 TDS 스타일 디자인 토큰, 완벽한 다크/라이트 테마 머신 (`data-theme="dark"`, FOUC 방지), Pretendard 폰트 시스템, 상단 스크롤 진행 바, 4대 정량 메트릭 칩(Metric Chips) 및 Challenge vs Solution Key-Value 구조.
+  - **보안 하드닝 (Security Hardening)**: CSP(`Content-Security-Policy`) 및 nosniff 보안 메타 태그 탑재, `vercel.json` A+ 보안 헤더 파일 생성, `js/script.js` Selector Injection 방어 정규식 패치.
+
+---
+
+## [v2.0 - Vercel·GitHub 전수 집약 & 이력서 연계 마스터 포트폴리오] - 2026-11-11
+
+### ✨ 추가됨 (Added)
+- **통합 마스터 쇼케이스 (Featured Projects 8선 최신 2026 규격)**:
+  - `NEXUS WORK & NEXUS-GUARD`: AI 사내 보안관제/XDR, pfSense 신뢰 프록시 트러블슈팅, SSE 스트리밍
+  - `Team PM App`: 원격 협업 칸반 웹앱, 라우트 지연 로딩 번들 42.6% 최적화, 실수형 정렬 단 1행 UPDATE
+  - `최부장의 비밀금고 & ZTNA Agent`: 제로 트러스트 3대 판정, WebCrypto ECDSA, 10분 120회 XDR 이상 탐지
+  - `AI Context Handover Lab`: AI A→B 대화 이력 0건 인계 문서 완주 실증 연구형 프로젝트
+  - `Plan-Do-See Diary`: Supabase PostgreSQL RLS 격리, KST 5일치 회고 일정 관리
+  - `카드툰 (Card News Maker)`: 2차 고도화 반영 — 서버 전송 0건 온디바이스 PWA, 캐러셀 10장 덱 지원, 42종 검증 템플릿, Undo/Redo 불변 상태 관리, 자체 호스팅 폰트 10종
+  - `Daylog (오늘의 진짜 정보판)`: 프론트엔드 복원력(RFC 5861 Stale-if-error), TBT 93.4% 개선(140ms), 테스트 140건 100% 통과, T05 데이터 신선도 배지 시스템
+  - `오리지널 감별국 (Odd One Out)`: 26.3KB 초경량 번들, 이미지·음원 파일 0개 순수 코드 합성(Three.js/Web Audio API), Mulberry32 결정론 난수 시드, 10분 연속 메모리 누수 0B
+- **3단 링크 시스템**: 각 프로젝트 카드마다 `[라이브 데모/앱 체험]`, `[기술 쇼케이스 포트폴리오]`, `[GitHub 소스코드]` 링크 지원
+- **인터랙티브 카테고리 필터**: `[전체 (All)]`, `[🛡️ 보안 & AI]`, `[💼 엔터프라이즈 & 웹]`, `[🎨 크리에이티브]` 원클릭 필터링
+- **실물 고해상도 스크린샷 8종 연동**: 2026년 최신 2차 고도화 화면(`card-news-maker.png`, `realtime-info-board-t04.png`, `odd-one-out.png`) 및 대표작 5종 수록
+- **이력서(`IT_역량이력서_수강전후_자가진단_작성.docx`) 완벽 반영**:
+  - Hero 퀵 스탯 배지 (Vercel 22개, GitHub 38개, AI-XDR 구축, SKT_ALEPH_A 100% 출석)
+  - 기술 스택 4대 도메인 및 자가진단 레벨(입문①, 기초②, 활용③) 체계적 분류
+  - 경력(산학협력단 매니저, 일학습병행 매니저, 간호학과 조교, 에스투에스) 및 교육(SKT_ALEPH_A, 그린컴퓨터아카데미, 학위) 정밀 기록
+  - Contact 섹션: 이메일(`doffl9737@gmail.com`) 원클릭 복사 토스트 알림 및 취업 정보 상세화
+
+---
+
 ## [v1.3 - Featured Projects 최신화] - 2026-08-27
 
 ### ✨ 추가됨 (Added)
