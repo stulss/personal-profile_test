@@ -2,6 +2,8 @@
 
 이 문서는 GitHub Pages를 통해 개인 포트폴리오 웹사이트를 무료로 배포하는 단계별 가이드입니다.
 
+> **현재 운영 방식 (2026-11-13)**: 기본 브랜치는 `master`입니다. 이 문서의 `main` 표기는 템플릿 기준이므로 `master`로 읽어 주세요. 제출용 주소는 Vercel(`https://personal-profiletest.vercel.app/`)이며, `git push origin master`를 하면 자동 배포됩니다. GitHub Pages(`https://stulss.github.io/personal-profile_test/`)는 보조 주소입니다.
+
 ---
 
 ## 📋 사전 준비사항
