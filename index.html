@@ -7,7 +7,7 @@
     <title>홍주형 | System Security & Resilient Backend Engineer</title>
 
     <!-- Security Meta Tags (Content Security Policy & Anti-Sniffing) -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data: https://via.placeholder.com; connect-src 'self'; frame-ancestors 'none';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' https://cdn.jsdelivr.net; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
@@ -73,7 +73,7 @@
         <section class="hero" id="hero">
             <div class="container">
                 <div class="hero__image-wrapper">
-                    <img src="https://via.placeholder.com/200" alt="홍주형 프로필 사진" class="hero__image">
+                    <img src="assets/profile.jpg" alt="홍주형 프로필 사진" class="hero__image">
                 </div>
 
                 <h1 class="hero__name">홍주형</h1>
@@ -88,7 +88,7 @@
                 <div class="hero__stats">
                     <div class="stat-card">
                         <span class="stat-card__number">18 / 18</span>
-                        <span class="stat-card__label">OWASP 위협 방어 시나리오 통과</span>
+                        <span class="stat-card__label">NEXUS WORK 자체 방어 점검 통과</span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-card__number">O(1)</span>
@@ -133,7 +133,7 @@
                     </p>
 
                     <p class="about__paragraph">
-                        사내 포털 취약점 방어(NEXUS-GUARD), pfSense 프록시 환경에서의 출발지 IP 무결성 복구, Supabase RLS 기반 제로트러스트 3대 판정 규칙 수립까지—저는 화려한 말 대신 <strong>'단위·통합 테스트 538건', '38개 공개 저장소', '22개 실배포 환경'</strong>이라는 객관적 데이터로 엔지니어링 신뢰성을 증명합니다.
+                        팀 프로젝트 NEXUS WORK의 웹·DB 하드닝, pfSense 프록시 환경에서의 출발지 IP 복구, 팀이 만든 시스템을 혼자서 어디서든 실행·테스트할 수 있게 재구성한 NEXUS-GUARD, Supabase RLS 기반 제로트러스트 3대 판정 규칙 수립까지—저는 화려한 말 대신 <strong>'단위·통합 테스트 538건', '38개 공개 저장소', '22개 실배포 환경'</strong>이라는 객관적 데이터로 엔지니어링 신뢰성을 증명합니다.
                     </p>
 
                     <div class="about__commitment-box">
@@ -409,12 +409,12 @@
             <div class="container">
                 <h2 class="section-title">Master Projects Showcase</h2>
                 <p class="section-subtitle">
-                    주특기 분야인 <strong>3대 코어 보안·백엔드 쇼케이스</strong>와 폭넓은 프론트엔드/R&amp;D 엔지니어링 역량을 증명하는 <strong>5대 엔지니어링 랩</strong>으로 구성되어 있습니다.
+                    주특기 분야인 <strong>4대 코어 보안·백엔드 쇼케이스</strong>와 폭넓은 프론트엔드/R&amp;D 엔지니어링 역량을 증명하는 <strong>5대 엔지니어링 랩</strong>으로 구성되어 있습니다.
                 </p>
 
                 <!-- Category Filters -->
                 <div class="projects__filters">
-                    <button class="filter-btn active" data-filter="all">전체 (All 8)</button>
+                    <button class="filter-btn active" data-filter="all">전체 (All 9)</button>
                     <button class="filter-btn" data-filter="security">🛡️ 보안 &amp; AI</button>
                     <button class="filter-btn" data-filter="enterprise">💼 백엔드 &amp; 엔터프라이즈</button>
                     <button class="filter-btn" data-filter="creative">🧪 프론트엔드 &amp; R&amp;D</button>
@@ -436,22 +436,22 @@
                         <div class="core-card__content">
                             <div class="core-card__header">
                                 <span class="core-card__index">CORE 01</span>
-                                <h3 class="core-card__title" id="project-nexus-title">NEXUS WORK &amp; NEXUS-GUARD</h3>
-                                <span class="core-card__role">부팀장 · 웹/DB 하드닝 (기여도 40%)</span>
+                                <h3 class="core-card__title" id="project-nexus-title">NEXUS WORK</h3>
+                                <span class="core-card__role">팀 4명 · 부팀장 · 웹/DB 하드닝·포털 개발 (기여도 40%)</span>
                             </div>
                             <p class="core-card__desc">
-                                사내 포털(ERP·그룹웨어·AI 어시스턴트)에 AI 프롬프트 인젝션 방어, L7 신뢰 프록시 헤더 보존, DB 컬럼 레벨 최소권한(PoLP), SSE 실시간 보안 감사 로그 스트리밍을 통합한 엔터프라이즈 하드닝 솔루션입니다.
+                                사내 포털(ERP·그룹웨어·AI 어시스턴트)에 AI 프롬프트 인젝션 방어, L7 신뢰 프록시 헤더 보존, DB 컬럼 레벨 최소권한(PoLP), SSE 실시간 보안 감사 로그 스트리밍을 통합한 엔터프라이즈 하드닝 솔루션입니다. 저는 웹·DB 하드닝과 포털 개발을 맡았고, pfSense 경계 방어·Graylog/Wazuh 탐지·n8n 자동화·공격 테스트는 팀원이 담당했습니다.
                             </p>
 
                             <!-- Metric Chips 4-Grid -->
                             <div class="core-card__metrics-grid">
                                 <div class="metric-chip">
-                                    <span class="metric-chip__label">OWASP 방어</span>
-                                    <span class="metric-chip__val highlight">18/18 통과</span>
+                                    <span class="metric-chip__label">자체 방어 점검</span>
+                                    <span class="metric-chip__val highlight">18항목 통과</span>
                                 </div>
                                 <div class="metric-chip">
-                                    <span class="metric-chip__label">IP 스푸핑</span>
-                                    <span class="metric-chip__val">원천 차단</span>
+                                    <span class="metric-chip__label">프록시 IP</span>
+                                    <span class="metric-chip__val">실제 IP 복구</span>
                                 </div>
                                 <div class="metric-chip">
                                     <span class="metric-chip__label">DB 격리</span>
@@ -471,7 +471,7 @@
                                 </div>
                                 <div class="ps-row">
                                     <span class="ps-tag ps-tag--solution">Solution</span>
-                                    <span class="ps-text">Waitress WSGI ProxyFix 미들웨어에서 내부망 프록시 CIDR 대역 화이트리스트 검증을 적용하여 IP 스푸핑 공격을 방어하고 출발지 실제 IP 무결성 100% 복구</span>
+                                    <span class="ps-text">Waitress WSGI ProxyFix 미들웨어에서 내부망 프록시 CIDR 대역 화이트리스트 검증을 적용하여 IP 스푸핑 공격을 방어하고 출발지 실제 IP를 정확히 기록하도록 복구</span>
                                 </div>
                             </div>
 
@@ -499,13 +499,73 @@ app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
 
                             <div class="card-actions">
                                 <a href="https://nexus-work-ten.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">라이브 데모 ↗</a>
-                                <a href="https://nexus-guard-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--accent">보안 쇼케이스 →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Core 2: NEXUS-GUARD (NEXUS WORK 독립 실행형, 개인) -->
+                    <article class="core-card" data-category="security" aria-labelledby="project-guard-title">
+                        <div class="core-card__image-box">
+                            <img src="assets/nexus-guard.png" alt="NEXUS-GUARD 관제 콘솔 포트폴리오 화면" class="core-card__image">
+                            <span class="core-card__floating-badge">Standalone Defense</span>
+                        </div>
+                        <div class="core-card__content">
+                            <div class="core-card__header">
+                                <span class="core-card__index">CORE 02</span>
+                                <h3 class="core-card__title" id="project-guard-title">NEXUS-GUARD</h3>
+                                <span class="core-card__role">1인 개발 · 2026.11.09~11.11 (기여도 100%)</span>
+                            </div>
+                            <p class="core-card__desc">
+                                NEXUS WORK(팀 4명)의 경계 방어·탐지·대응 흐름을 혼자서 다른 PC에서도 바로 실행·테스트할 수 있게 재구성한 독립 실행형 능동 방어 솔루션입니다. pfSense·Graylog·Wazuh·n8n이 없어도 자체 엔진(디코이 트랩, SHA-256 무결성 감시, 방화벽 차단)으로 동작하고, 팀 환경이 있으면 그대로 연동합니다.
+                            </p>
+
+                            <div class="core-card__metrics-grid">
+                                <div class="metric-chip">
+                                    <span class="metric-chip__label">자동화 테스트</span>
+                                    <span class="metric-chip__val highlight">70건 통과</span>
+                                </div>
+                                <div class="metric-chip">
+                                    <span class="metric-chip__label">실행 파일</span>
+                                    <span class="metric-chip__val">단일 17.5MB</span>
+                                </div>
+                                <div class="metric-chip">
+                                    <span class="metric-chip__label">AI 판정</span>
+                                    <span class="metric-chip__val">4단 폴백</span>
+                                </div>
+                                <div class="metric-chip">
+                                    <span class="metric-chip__label">외부 장비 없이</span>
+                                    <span class="metric-chip__val">단독 실행</span>
+                                </div>
+                            </div>
+
+                            <div class="ps-box">
+                                <div class="ps-row">
+                                    <span class="ps-tag ps-tag--challenge">Challenge</span>
+                                    <span class="ps-text">로컬 LLM 단독 추론이 건당 15~30초 걸려 실시간 차단이 어려웠고, 최초 실행 시 예시 차단 IP 때문에 위험 점수가 65점으로 표시되는 오탐이 있었음</span>
+                                </div>
+                                <div class="ps-row">
+                                    <span class="ps-tag ps-tag--solution">Solution</span>
+                                    <span class="ps-text">Groq → NVIDIA NIM → Ollama → 내장 규칙 4단 폴백 라우팅으로 외부 LLM 장애에도 판정을 이어가고, 초기화 로직 개편과 전용 테스트(test_clean_slate)로 최초 실행 시 위협 0건·100점 상태를 보장</span>
+                                </div>
+                            </div>
+
+                            <div class="card-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">CustomTkinter</span>
+                                <span class="tag">Windows netsh</span>
+                                <span class="tag">SHA-256 FIM</span>
+                                <span class="tag">Groq</span>
+                                <span class="tag">GitHub Actions</span>
+                            </div>
+
+                            <div class="card-actions">
+                                <a href="https://nexus-guard-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn--primary">보안 쇼케이스 →</a>
                                 <a href="https://github.com/stulss/nexus-guard" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub ↗</a>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Core 2: Team PM App -->
+                    <!-- Core 3: Team PM App -->
                     <article class="core-card" data-category="enterprise" aria-labelledby="project-teampm-title">
                         <div class="core-card__image-box">
                             <img src="assets/team-pm-app.png" alt="Team PM App 실시간 칸반 보드 화면" class="core-card__image">
@@ -513,7 +573,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
                         </div>
                         <div class="core-card__content">
                             <div class="core-card__header">
-                                <span class="core-card__index">CORE 02</span>
+                                <span class="core-card__index">CORE 03</span>
                                 <h3 class="core-card__title" id="project-teampm-title">Team PM App</h3>
                                 <span class="core-card__role">1인 풀스택 엔지니어링 (기여도 100%)</span>
                             </div>
@@ -585,7 +645,7 @@ WHERE id = $4; -- O(1) 단 1회 쓰기로 순서 재배치 완료</code></pre>
                         </div>
                         <div class="core-card__content">
                             <div class="core-card__header">
-                                <span class="core-card__index">CORE 03</span>
+                                <span class="core-card__index">CORE 04</span>
                                 <h3 class="core-card__title" id="project-vault-title">최부장의 비밀금고 &amp; ZTNA Agent</h3>
                                 <span class="core-card__role">1인 보안 엔지니어링 (기여도 100%)</span>
                             </div>

@@ -268,6 +268,7 @@ body {
     height: 140px;
     border-radius: var(--radius-full);
     object-fit: cover;
+    object-position: center 20%;
     border: 3px solid var(--brand-primary);
     box-shadow: var(--shadow-md);
 }
